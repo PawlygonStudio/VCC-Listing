@@ -1,7 +1,7 @@
 {
     "name":"Pawlygon VCC",
     "id":"net.pawlygon.vcc-packages",
-    "url":"https://pawlygonstudio.github.io/VCC-Listing/index.json",
+    "url":"https://vcc.pawlygon.net/index.json",
     "author":{
         "email":"help@pawlygon.net",
         "name":"Pawlygon",
