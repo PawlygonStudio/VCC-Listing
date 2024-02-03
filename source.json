@@ -1,6 +1,6 @@
 {
     "name":"Pawlygon VCC",
-    "id":"com.vrchat.example-listing",
+    "id":"net.pawlygon.vcc-packages",
     "url":"https://pawlygonstudio.github.io/VCC-Listing/index.json",
     "author":{
         "email":"choki@pawlygon.net",
