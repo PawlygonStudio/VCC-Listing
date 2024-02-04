@@ -1,5 +1,5 @@
 
-# Pawlygon VCC Packages
+# Pawlygon VCC Listing
 You can use [Pawlygon VCC](https://vcc.pawlygon.net/) to add our tools into your VRChat Creator Companion.
 ## Available tools
 |Package Name|Description  |
