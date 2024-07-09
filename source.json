@@ -34,6 +34,12 @@
                 "https://github.com/PawlygonStudio/VRC-Facetracking/releases/download/1.3.1/net.pawlygon.vrc-facetracking-1.3.1.zip",
                 "https://github.com/PawlygonStudio/VRC-Facetracking/releases/download/1.3.2/net.pawlygon.vrc-facetracking-1.3.2.zip"
             ]
+        },
+        {
+            "name":"net.pawlygon.unitytools",
+            "releases":[
+                "https://github.com/PawlygonStudio/UnityTools/releases/download/1.0.0/net.pawlygon.unitytools-1.0.0.zip"
+            ]
         }
     ]
 }
