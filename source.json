@@ -50,7 +50,8 @@
         {
             "name":"net.pawlygon.unitytools",
             "releases":[
-                "https://github.com/PawlygonStudio/UnityTools/releases/download/1.0.0/net.pawlygon.unitytools-1.0.0.zip"
+                "https://github.com/PawlygonStudio/UnityTools/releases/download/1.0.0/net.pawlygon.unitytools-1.0.0.zip",
+                "https://github.com/PawlygonStudio/UnityTools/releases/download/1.0.1/net.pawlygon.unitytools-1.0.1.zip"
             ]
         }
     ]
