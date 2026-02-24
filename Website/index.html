@@ -12,7 +12,29 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VCC Listing</title>
+  <title>{{~ listingInfo.Name ~}}</title>
+  <meta name="description" content="{{ listingInfo.Description }}">
+  <meta name="author" content="{{ listingInfo.Author.Name }}">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#FF6F61">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ listingInfo.Name }}">
+  <meta property="og:description" content="{{ listingInfo.Description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ listingInfo.Author.Name }}">
+  {{~ if listingInfo.BannerImage; ~}}
+  <meta property="og:image" content="{{ listingInfo.BannerImageUrl }}">
+  {{~ end; ~}}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ listingInfo.Name }}">
+  <meta name="twitter:description" content="{{ listingInfo.Description }}">
+  {{~ if listingInfo.BannerImage; ~}}
+  <meta name="twitter:image" content="{{ listingInfo.BannerImageUrl }}">
+  {{~ end; ~}}
+
   <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
