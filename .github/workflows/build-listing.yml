@@ -27,9 +27,6 @@ jobs:
   
   build-listing:
     name: build-listing
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       
@@ -61,6 +58,17 @@ jobs:
         with:
           path: ${{env.listPublishDirectory}}
           
+  # In its own job: an artifact isn't visible for a few seconds after its upload, so a deploy step right
+  # after the upload in the same job doesn't find it (actions/deploy-pages#451).
+  deploy:
+    name: deploy
+    needs: build-listing
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
